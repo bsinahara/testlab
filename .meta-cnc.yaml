@@ -52,9 +52,17 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-  - name: quick_name
-    xpath: /config/devices/restofthe/xmltree
-    file: filename.xml
+  - name: tagname
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/tag
+    file: tag.xml
+- name: edlname
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/external-list"></request>
+    file: edl.xml
+- name: rulebasename
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase"></request>
+EOF
+    file: rulebase.xml
 # ---------------------------------------------------------------------
 # end of snippets section
+
 
